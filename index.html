@@ -7,7 +7,7 @@
 </head>
 <body>
   
-    <h1>InstaScan</h1>
+    <h1>InstaScan 1</h1>
     <video id="preview"></video>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
@@ -16,7 +16,7 @@
       });
       Instascan.Camera.getCameras().then(function (cameras) {
         if (cameras.length > 0) {
-          scanner.start(cameras[2]);
+          scanner.start(cameras[1]);
         } else {
           console.error('No cameras found.');
         }
