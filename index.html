@@ -10,7 +10,11 @@
     <h1>InstaScan 1</h1>
     <video id="preview"></video>
     <script type="text/javascript">
-      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      let scanner = new Instascan.Scanner({ 
+       video: document.getElementById('preview'),
+       mirror: false,
+       scanPeriod: 1
+      });
       scanner.addListener('scan', function (content) {
         alert(content);
       });
