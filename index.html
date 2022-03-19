@@ -8,10 +8,12 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
 </head>
-<body class="container bg-primary justify-content-center">
-    <h1>InstaScan Rear Cam No Mirror Bootsrap 5</h1>
-    <video id="preview"></video>
-    <h3>Capture Your QR-CODE</h3>
+<body class="container">
+    <h1 class="mt-5 text-center">InstaScan Rear Cam No Mirror</h1>
+    <div class="row justufy-content-center mt-5">
+        <video id="preview" class="bg-primary "></video>
+    </div>
+    <h3 class="mt-5 text-center">Capture Your QR-CODE</h3>
     <script type="text/javascript">
       let scanner = new Instascan.Scanner({ 
        video: document.getElementById('preview'),
